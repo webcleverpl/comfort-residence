@@ -19260,11 +19260,6 @@ h6 {
   border: none;
 }
 
-.vc_row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 .tablepress .odd td {
   background-color: #f9f9f9;
 }
@@ -19304,4 +19299,8 @@ h6 {
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: rgb(221, 221, 221);
+}
+
+.vc_row {
+  width: 100%;
 }

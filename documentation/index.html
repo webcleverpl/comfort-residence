@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!--if IE 8html.no-js.lt-ie9(lang='en')
+-->
+<!-- [if gt IE 8] <!-->
+<html class="no-js" lang="en">
+<!-- <![endif]-->
+
+<head>
+    <!--
+    Basic Page Needs
+    ==================================================
+    -->
+    <meta charset="UTF-8">
+    <title>TATEE Documentation</title>
+    <meta name="description" content="AuCreative theme tempalte">
+    <meta name="author" content="AuCreative">
+    <meta name="keywords" content="AuCreative theme template">
+    <!--
+    Mobile Specific Metas
+    ==================================================
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    CSS
+    ==================================================
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700,800,600,300" rel="stylesheet">
+    <link href="vendor/syntaxhighlighter/styles/shCoreDefault.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div class="container text-center">
+                <a id="logo" href="#">
+                    <img rel="Highend" src="images/ic-logo-01.png" alt="logo">
+                </a>
+                <strong>Version:</strong>
+                <span>1.0 |</span>
+                <strong>Last update:</strong>
+                <span>1 November 2018</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <ul class="docs-nav">
+            <li>
+                <strong>Introduction</strong>
+            </li>
+            <li>
+                <a class="cc-active active" href="#getting-started">Getting Started</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#html-structure">HTML Structure</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#logo-settings">Logo</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#chaning-fonts">Fonts</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#sliders">Sliders</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#helpers">Helper Classes</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#php">Contact Form</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#grid">Grid</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#browser-support">Browser Support</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#creadits">Source & Credits</a>
+            </li>
+        </ul>
+        <div class="docs-content">
+            <div class="docs-content-inner">
+                <section id="getting-started">
+                    <h1>Introduction</h1>
+                    <p>Thank you for purchasing TATEE template!</p>
+                    <p>This documentation will give you an understanding of how TATEE is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us in our Support Portal
+                        <a
+                        href="http://support.aucreative.co/">http://support.aucreative.co/</a>
+                    </p>
+                    <p>If you need custom customization, please contact us from here:
+                        <a href="http://themeforest.net/user/authemes">http://themeforest.net/user/Eagle-Theme</a>
+                    </p>
+                    <p>Thank you so much!</p>
+                    <p>AU CREATIVE</p>
+                    <p> </p>
+                    <h1 id="Installation">Getting Started</h1>
+                    <h4>What's Included</h4>
+                    <p>Once you have download the package you will see the following folder structure in "
+                        <strong>template</strong>" Folder</p>
+                    <div id="default-tree">
+                        <ul>
+                            <li>
+                                <strong>css</strong>- Main Stylesheet Files</li>
+                            <li>
+                                <strong>fonts</strong>- Fonts file and css for fonts</li>
+                            <li>
+                                <strong>images</strong>- Images Files</li>
+                            <li>
+                                <strong>js</strong>- Javacripts Folder</li>
+                            <li>
+                                <strong>includes</strong>- PHP Files (contact form, ... etc)</li>
+                            <li>
+                                <strong>vendor</strong>- Vendor Files (jquery, bootstrap etc)</li>
+                        </ul>
+                    </div>
+                    <p>In order to use in your website, you need to upload template files (
+                        <strong>inside the folder www</strong>) to your web server with the help of one of the FTP-clients (for example, WinSCP or Total Commander etc).</p>
+                </section>
+                <section id="html-structure">
+                    <h1>HTML Structure</h1>
+                    <p>TATEE template is based on Bootstrap Framework (
+                        <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>) Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+                    <p>Below is a sample coding structure:</p>
+                    <pre class="brush: html;">&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en-US"&gt;
+
+&lt;head&gt;
+<!-- Page meta, page css, page js files, page title etc... -->
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    <!-- HEADER -->
+    <header>
+
+        ...
+
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SECTION -->
+    <section>
+            <div class="container">
+
+                ...
+
+            </div>
+    </section>
+    <!-- END SECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            ...
+
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+</pre>
+                </section>
+                <section id="logo-settings">
+                    <h1>Logo Settings</h1>
+                    <p>Default site logo is placed inside<code>header</code> container.</p>
+                    <pre class="brush: html;"><!--HEADER-->
+<header class="header">
+
+    <div class="header__bar">
+
+        <div class="container">
+
+            <div class="header__content">
+
+                <div class="logo">
+
+                    <a href="index.html">
+                        <img src="images/icons/logo-black.png" alt="TATEE" />
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+</pre>
+                </section>
+                <section id="chaning-fonts">
+                    <h1>Changing Fonts</h1>
+                    <p>By default TATEE Template uses Four fonts from google library:
+                        <span></span><code>'Poppins'</code> from the
+                        <a target="_blank" href="http://www.google.com/fonts">Google Fonts Library</a>
+                    </p>
+                    <p>If you wish to add/change the site fonts, please take a look in the<code>head</code> part of the website and you will find this tag:</p>
+                    <pre class="brush: html"><!-- LOAD GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,
+300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</pre>
+                    <p>To include new font you can simply add another line like this:</p>
+                    <pre class="brush: html"><!-- LOAD GOOGLE FONTS -->
+<link href="http://fonts.googleapis.com/css?family=Lato:400,300,800,700,600" rel="stylesheet" type="text/css">
+</pre>
+                    <p>Or add an<code>|</code> seperator and paste<code>Lato:400,300,800,700,600</code> after default website fonts link.</p>
+                </section>
+                <section id="sliders">
+                    <h1>Sliders</h1>
+                    <p>TATEE includes 2 sliders that gives you all the options they need.</p>
+                    <ul>
+                        <li>
+                            <strong>
+                                <a href="http://kenwheeler.github.io/slick/">Slick:</a>
+                            </strong>
+                            <span>Is an touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.
+
+                            </span>
+                        </li>
+                        <li>
+                                <strong>
+                                    <a href="https://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/">Revolution:</a>
+                                </strong>
+                                <span>An All-Purpose Slide Displaying Solution that can show any kind of media with highly customizable transitions, effects and animations. 
+                                    <br>
+                                    <br>
+                                </span>
+                            </li>
+                    </ul>
+                    <h4>Slick Data config</h4>
+                    <p>This excellent carousel slider can be controler usuing HTML5 data attirbutes, see the full list below:</p>
+                    <ul>
+                        <li><code>data-slick-lg</code> - The columns in large desktop screen size, default value is
+                            <strong>1 columns</strong>
+                        </li>
+                        <li><code>data-slick-md</code> - The columns in laptop screen size, default value is
+                            <strong>data-slick-lg</strong>
+                        </li>
+                        <li><code>data-slick-sm</code> - The columns in tablet screen size, default value is
+                            <strong>data-slick-md</strong>
+                        </li>
+                        <li><code>data-slick-xs</code> - The columns in mobile screen size, default value is
+                            <strong>data-slick-sm</strong>
+                        </li>
+                        <li><code>data-slick-autoplay</code> - Set autoplay status for slider, default value is
+                            <strong>false</strong>
+                        </li>
+                        <li><code>data-slick-arrows</code> - Set arrow status for slider, default value is
+                            <strong>false</strong>
+                        </li>
+                        <li><code>data-slick-loop</code> - Set loop status for slider, default value is
+                            <strong>true</strong>
+                        </li>
+                        <li><code>data-slick-dots</code> - Set dots status for slider, default value is
+                            <strong>false</strong>
+                        </li>
+                        <li><code>data-slick-centermode</code> - Center slider, default value is
+                            <strong>false</strong>
+                        </li>
+                        <li><code>data-slick-draggable</code> - Set mousedrag status for slider, default value is
+                            <strong>true</strong>
+                        </li>
+                        <li><code>data-slick-pauseonhover</code> - Set pause on hover for slider, default value is
+                            <strong>false</strong>
+                        </li>
+                        <li><code>data-carousel-speed</code> - set speed for slider, default value is
+                            <strong>500</strong>
+                        </li>
+                    </ul>
+                    <p>Advanced customization of file<code>global.js</code>in folder<code>js/global.js</code>
+                    </p>
+                    <p>The full documentation of Slick Slider can be found
+                        <a href="http://kenwheeler.github.io/slick/" target="_blank">here</a>
+                    </p>
+                    <br>
+
+                    <h4>Slider Revolution</h4>
+                    <p>The full documentation of Slider Revolution can be found
+                        <a href="https://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/" target="_blank">here</a>
+                    </p>
+                </section>
+                <section id="helpers">
+                    <h1>Helpers</h1>
+                    <br>
+                    <p>TATEE helper css classes allow you to build your custom layout without touching any CSS code</p>
+                    <p>These classes are generic helper classes predifined in the CSS of pages, here is quick view what they can do</p>
+                    <h4>Margins</h4>
+                    <p>You can add this helper class to any element in your HTML code to set Margins</p>
+                    <table class="table table-bordered table-condensed table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th>First Prefix ( m-*)</th>
+                                <th>Second Prefix(m-t/b/l/r-*)</th>
+                                <th>Last Prefix(m-t-$value)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>m for margin</td>
+                                <td>t : top, b : bottom, l : left, r : right</td>
+                                <td>5,10,15,20, ... 150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        <span>example :</span>
+                    </p><code>m-t-10</code>
+                    <span>which means Margin Top 10px</span>
+                    <br><code>m-b-20</code>
+                    <span>which means Margin Bottom 20px</span>
+                    <br><code>m-l-5</code>
+                    <span>which means Margin Left 5px</span>
+                    <br><code>m-r-35</code>
+                    <span>which means Margin Right 35px</span>
+                    <br>
+                    <p>
+                        <label class="label label-danger">Note:</label>Value can not be anything, 1,2,4,5,6. It has a step of 5px, eg: 5,10,15
+                    </p>
+                    <p>Other options:</p>
+                    <p>To remove margin from a HTML element add the class</p><code>no-margin</code>
+                    <br>
+                    <br>
+                    <h4>Paddings</h4>
+                    <p>You can add this helper class to any element in your HTML code to set paddings</p>
+                    <table class="table table-bordered table-condensed table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th>First Prefix ( p-*)</th>
+                                <th>Second Prefix(p-t/b/l/r-*)</th>
+                                <th>Last Prefix(p-t-$value)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>p for padding</td>
+                                <td>t : top, b : bottom, l : left, r : right</td>
+                                <td>5,10,15,20, ... 150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>example :</p><code>p-t-10</code>
+                    <span>which means padding Top 10px</span>
+                    <br><code>p-b-20</code>
+                    <span>which means padding Bottom 20px</span>
+                    <br><code>p-l-5</code>
+                    <span>which means padding Left 5px</span>
+                    <br><code>p-r-35</code>
+                    <span>which means padding Right 35px</span>
+                    <br>
+                    <p>
+                        <label class="label label-danger">Note:</label>Value can not be anything, 1,2,4,5,6. It has a step of 5px, eg: 5,10,15
+                    </p>
+                </section>
+                <section id="php">
+                    <h1>Contact form</h1>
+                    <p>
+                        <span>You need to modify email address and email title on</span><code>includes/contact-form.php</code>
+                        <span>in includes folder,</span><code>line 3</code>
+                        <span>and</span><code>line 4</code>
+                    </p>
+                    <pre class="brush: html;">"$mail_host = "trieuau@gmail.com"
+"$mail_title = "[TATEE] Contact Form Message"</pre>
+                    <p>with your or company contact email address and the title mail you want.</p>
+                    <p>
+                        <labe class="label label-danger">Note:</labe>
+                        <span></span>Your server must support php send<code>mail()</code>function to make contact form work properly
+                    </p>
+                </section>
+                <section id="grid">
+                    <h1>Grid</h1>
+                    <p>
+                        Bootstrap grid includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating
+                        more semantic layouts
+                    </p>
+                    <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+                    <ul>
+                        <li>You must start with<code>row</code>
+                        </li>
+                        <li>There are pre-define classes of columns starting from 1 to 12, example<code>col-md-1</code> to<code>col-md-12</code>
+                        </li>
+                        <li>Each of these value represent a percentage of the screen, 1 being the smallest and 12 being 100%</li>
+                        <li>You can create different grid pattern that finally forms 12</li>
+                    </ul>
+                    <p>For more information about Bootstrap, visit:
+                        <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                    </p>
+                    <p>example :</p>
+                    <pre class="brush: html;"><div class="row">
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+</div></pre>
+                    <br>
+                    <p>
+                        <span class="label label-danger">Note</span>Bootstrap includes different grids for different screen sizes, "col-md" md stands for medium screen, the following table explains:</p>
+                    <table class="table table-bordered table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Extra small devices
+                                    <small>Phones (
+                                        <768px)</small>
+                                </th>
+                                <th>Small devices
+                                    <small>Tablets (≥768px)</small>
+                                </th>
+                                <th>Medium devices
+                                    <small>Desktops (≥992px)</small>
+                                </th>
+                                <th>Large devices
+                                    <small>Desktops (≥1200px)</small>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-nowrap">Grid behavior
+                                    <td>Horizontal at all times</td>
+                                    <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap">Container width
+                                    <td>None (auto)</td>
+                                    <td>750px</td>
+                                    <td>970px</td>
+                                    <td>1170px</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap">Class prefix
+                                    <td><code>.col-xs-</code>
+                                    </td>
+                                    <td><code>.col-sm-</code>
+                                    </td>
+                                    <td><code>.col-md-</code>
+                                    </td>
+                                    <td><code>.col-lg-</code>
+                                    </td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap"># of columns
+                                    <td colspan="4">12</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap">Column width
+                                    <td class="text-muted">Auto</td>
+                                    <td>~62px</td>
+                                    <td>~81px</td>
+                                    <td>~97px</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap">Gutter width
+                                    <td colspan="4">30px (15px on each side of a column)</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap">Nestable
+                                    <td colspan="4">Yes</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap">Offsets
+                                    <td colspan="4">Yes</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap">Column ordering
+                                    <td colspan="4">Yes</td>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="browser-support">
+                    <h1>Browser Support</h1>
+                    <p>TATEE is built keeping mind to support a wide range of browsers and devices. We all major browers Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and Above</p>
+                    <p></p>
+                    <br>
+                    <table class="table table-bordered table-striped table-condensed table-responsive">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <th>Chrome</th>
+                                <th>Firefox</th>
+                                <th>Internet Explorer</th>
+                                <th>Opera</th>
+                                <th>Safari</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Android
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                    <td class="text-muted">N/A</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>iOS
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-muted">N/A</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Mac OS X
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Windows
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="creadits">
+                    <h1>Source & Credits</h1>
+                    <p>
+                        All images are only for demonstration purpose, however you can re-download them in sites below. Almost all (not including overclothing.com, Daniel Zenda, Freepik etc...) images are released free of copyrights under Creative Commons CC0.
+                    </p>
+                    <br>
+                    <br>
+                    <h4>Images & Mockups</h4>
+                    <ul>
+                        <li>All Free Stocks
+                            <a target="_blank" href="allthefreestock.com">http://allthefreestock.com</a>
+                        </li>
+                        <li>Pexels
+                            <a target="_blank" href="https://www.pexels.com/">https://www.pexels.com/</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <h4>Scripts</h4>
+                    <ul>
+                        <li>Animsition Loader
+                            <a target="_blank" href="http://git.blivesta.com/animsition/">http://git.blivesta.com/animsition/</a>
+                        </li>
+                        <li>jQuery
+                            <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a>
+                        </li>
+                        <li>Slick Slider
+                            <a target="_blank" href="http://kenwheeler.github.io/slick/">http://kenwheeler.github.io/slick/</a>
+                        </li>
+                        <li>Waypoints
+                            <a target="_blank" href="http://imakewebthings.com/waypoints/">http://imakewebthings.com/waypoints/</a>
+                        </li>
+                        <li>Counter Up
+                            <a target="_blank" href="http://bfintal.github.io/Counter-Up/">http://bfintal.github.io/Counter-Up/demo/demo.html</a>
+                        </li>
+
+                        <li>WOW JS
+                            <a target="_blank" href="https://wowjs.uk/">https://wowjs.uk/</a>
+                        </li>
+
+                        <li>Isotope
+                            <a target="_blank" href="https://isotope.metafizzy.co/">https://isotope.metafizzy.co/</a>
+                        </li>
+
+                        <li>Pagepilling JS
+                            <a target="_blank" href="https://alvarotrigo.com/pagePiling/">https://alvarotrigo.com/pagePiling/</a>
+                        </li>
+
+                        <li>noUiSlider
+                            <a target="_blank" href="https://refreshless.com/nouislider/">https://refreshless.com/nouislider/</a>
+                        </li>
+
+                    </ul>
+                    <br>
+                    <br>
+                    <h4>CSS & Fonts</h4>
+                    <ul>
+                        <li>Bootstrap Framework
+                            <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                        </li>
+                        <li>Animate CSS
+                            <a target="_blank" href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
+                        </li>
+                        <li>Themmify Icons
+                            <a target="_blank" href="https://themify.me/themify-icons/">https://themify.me/themify-icons/</a>
+                        </li>
+                        <li>Font Awesome
+                            <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
+                        </li>
+                        <li>Material Design Iconic Font
+                            <a target="_blank" href="http://zavoloklom.github.io/material-design-iconic-font">http://zavoloklom.github.io/material-design-iconic-font</a>
+                        </li>
+                        <li>Google Fonts
+                            <a target="_blank" href="https://www.google.com/fonts">https://www.google.com/fonts</a>
+                        </li>
+                        <li>Css hamburgers
+                            <a target="_blank" href="https://jonsuh.com/hamburgers/">https://jonsuh.com/hamburgers/</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--
+    Javascripts
+    ==================================================
+    -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="vendor/syntaxhighlighter/scripts/shCore.js"></script>
+    <script src="vendor/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <script src="vendor/syntaxhighlighter/scripts/shBrushCss.js"></script>
+    <script src="vendor/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+    <script src="vendor/syntaxhighlighter/scripts/shBrushXml.js"></script>
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+    <!--
+    End Document
+    ==================================================
+    -->
+</body>
+
+</html>

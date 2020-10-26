@@ -19304,3 +19304,14 @@ h6 {
 .vc_row {
   width: 100%;
 }
+
+@media (max-width: 640px) {
+  .mytable .tablepress td, .mytable .tablepress th {
+      font-size: 13px;
+  }
+  
+  .mytable .tablepress tfoot th, .mytable .tablepress thead th {
+      font-size: 12px;
+      word-break: break-all;
+  }
+}

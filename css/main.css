@@ -8145,6 +8145,29 @@ button:focus {
   margin-top: 10px;
 }
 
+#galeria {
+  margin-bottom: 20px;
+}
+
+#galeria h2 {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#galeria h2:after {
+  content: "";
+  background: #551caa;
+  height: 8px;
+  width: 140px;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: block;
+  margin-top: 10px;
+}
+
 .custom-col {
   float: left;
   padding-left: 0px;
@@ -8169,6 +8192,10 @@ button:focus {
 
 .entry-content h1 {
   margin-bottom: 10px;
+}
+
+.custom-topmost-banner img {
+  width: 100%;
 }
 
 /* ==========================================================================

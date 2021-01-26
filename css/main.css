@@ -8177,6 +8177,121 @@ button:focus {
   margin-top: 50px;
 }
 
+#wczesniejsze-inwestycje {
+  margin-bottom: 20px;
+}
+
+#wczesniejsze-inwestycje h2 {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#wczesniejsze-inwestycje h2:after {
+  content: "";
+  background: #551caa;
+  height: 8px;
+  width: 140px;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: block;
+  margin-top: 10px;
+}
+
+#ocomfortresidence {
+  margin-bottom: 20px;
+}
+
+#ocomfortresidence h2 {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#ocomfortresidence h2:after {
+  content: "";
+  background: #551caa;
+  height: 8px;
+  width: 140px;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: block;
+  margin-top: 10px;
+}
+
+#partnerzy {
+  margin-bottom: 20px;
+}
+
+#partnerzy h2 {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#partnerzy h2:after {
+  content: "";
+  background: #551caa;
+  height: 8px;
+  width: 140px;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: block;
+  margin-top: 10px;
+}
+
+#finansowanie {
+  margin-bottom: 20px;
+}
+
+#finansowanie h2 {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#finansowanie h2:after {
+  content: "";
+  background: #551caa;
+  height: 8px;
+  width: 140px;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: block;
+  margin-top: 10px;
+}
+
+#kontakt {
+  margin-bottom: 20px;
+}
+
+#kontakt h2 {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#kontakt h2:after {
+  content: "";
+  background: #551caa;
+  height: 8px;
+  width: 140px;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: block;
+  margin-top: 10px;
+}
+
 .custom-col {
   float: left;
   padding-left: 0px;

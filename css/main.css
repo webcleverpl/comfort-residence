@@ -8173,6 +8173,10 @@ button:focus {
   margin-top: 10px;
 }
 
+#map-section {
+  margin-top: 50px;
+}
+
 .custom-col {
   float: left;
   padding-left: 0px;

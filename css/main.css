@@ -8109,6 +8109,10 @@ button:focus {
   border-bottom-style: solid;
 }
 
+#infographics img {
+  max-height: 80px;
+}
+
 @media (max-width: 1600px) and (min-width: 1400px) {
   #infographics {
     width: 1300px;

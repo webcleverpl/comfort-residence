@@ -8096,7 +8096,7 @@ button:focus {
    ========================================================================== */
 
 .custom-row {
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 #infographics {

@@ -19256,19 +19256,19 @@ a.active {
 }
 
 .arch4-bg {
+  background-image: url("../img/dostosowanie-rozmiaru-pomieszczen.jpg");
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 15px; */
+  min-height: 250px;
+}
+
+.arch5-bg {
   background-image: url("../img/obsluga-sprzedazy-nieruchomosci.jpg");
   background-size: cover;
   background-position: center;
   /* border-radius: 15px; */
   /* margin: 20px; */
-  min-height: 250px;
-}
-
-.arch5-bg {
-  background-image: url("../img/dostosowanie-rozmiaru-pomieszczen.jpg");
-  background-size: cover;
-  background-position: center;
-  /* border-radius: 15px; */
   min-height: 250px;
 }
 

@@ -18827,6 +18827,12 @@ box-shadow: 5px 5px 5px 2px #551CAA; */
   }
 }
 
+@media (min-width: 992px) {
+  .project-style-1 .entry-meta.banino {
+    height: 250px;
+  }
+}
+
 @media (max-width: 388px) {
   .title-1 {
     font-size: 30px;

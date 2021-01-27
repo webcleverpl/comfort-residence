@@ -6527,6 +6527,36 @@ button {
   color: #fff;
 }
 
+.entry-meta.migowskie {
+  background-image: url("../img/inwestycje/migowskie-wzgorza.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 70px;
+  padding-bottom: 25px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.entry-meta.hallera {
+  background-image: url("../img/inwestycje/hallera.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 70px;
+  padding-bottom: 25px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.entry-meta.wrzos {
+  background-image: url("../img/inwestycje/wrzos.png");
+}
+
+.entry-meta.chopina {
+  background-image: url("../img/inwestycje/chopina.png");
+}
+
 .project-style-1 .entry-meta__item,
 .project-style-4 .entry-meta__item {
   margin-bottom: 35px;
@@ -19225,11 +19255,35 @@ a.active {
   min-height: 250px;
 }
 
+.arch4-bg {
+  background-image: url("../img/obsluga-sprzedazy-nieruchomosci.jpg");
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 15px; */
+  /* margin: 20px; */
+  min-height: 250px;
+}
+
+.arch5-bg {
+  background-image: url("../img/dostosowanie-rozmiaru-pomieszczen.jpg");
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 15px; */
+  min-height: 250px;
+}
+
 .media.media-service {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.media.media-service.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .wp-post-image {

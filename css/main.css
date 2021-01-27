@@ -6506,6 +6506,17 @@ button {
 
 .project-style-1 .entry-meta,
 .project-style-4 .entry-meta {
+  background-image: url("../img/banino-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 70px;
+  padding-bottom: 25px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.project-style-1 .entry-meta.banino {
   background-image: url("../img/komfortowe_osiedle.png");
   background-size: cover;
   background-position: center;
@@ -6513,7 +6524,6 @@ button {
   padding-bottom: 25px;
   margin-bottom: 60px;
   border-radius: 20px;
-
   color: #fff;
 }
 

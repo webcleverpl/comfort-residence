@@ -18844,6 +18844,9 @@ box-shadow: 5px 5px 5px 2px #551CAA; */
   .img-no-desktop {
     display: none;
   }
+  #custom-topmost-banner-small {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -18880,6 +18883,12 @@ box-shadow: 5px 5px 5px 2px #551CAA; */
 @media (max-width: 768px) {
   .rev_slider_wrapper.rev_slider_wrapper--p80.tp-overflow-hidden {
     height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #custom-topmost-banner-big {
+    display: none;
   }
 }
 

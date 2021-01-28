@@ -538,6 +538,14 @@ body {
   overflow-y: auto;
 }
 
+body {
+  /* 
+  this code prevents an unintended creation of padding-right during opening the modal carousel from Galeria section 
+  which causes an effect of the whole page jumping 
+  */
+  padding-right: 0px !important;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -19564,4 +19572,8 @@ h6 {
 }
 .imageBox {
   margin-left: 50%;
+}
+
+#gallery img {
+  cursor: pointer;
 }

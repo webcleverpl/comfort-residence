@@ -5617,6 +5617,7 @@ button {
   max-height: 60px;
   display: flex;
   align-items: center;
+  opacity: 0.85;
 }
 .header__content-right .active:hover {
   color: #fff;

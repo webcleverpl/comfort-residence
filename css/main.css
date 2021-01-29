@@ -18885,6 +18885,9 @@ box-shadow: 5px 5px 5px 2px #551CAA; */
   .rev_slider_wrapper.rev_slider_wrapper--p80.tp-overflow-hidden {
     height: auto;
   }
+  #partnerzy-5 {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -19590,4 +19593,8 @@ h6 {
 
 #gallery img {
   cursor: pointer;
+}
+
+#partnerzy-5, #partnerzy-6 {
+  width: 200px;
 }

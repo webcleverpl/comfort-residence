@@ -19357,25 +19357,31 @@ iframe {
     padding: 1em 0;
   }
 
-  .flex-inwestycje {
+  /* .flex-inwestycje {
     margin: 4em 0;
-  }
+  } */
+
   .mobile-reverse {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .title-1 {
     font-size: 30px;
   }
+
   .text-financing {
     margin: 1.5em 0;
   }
+
   .padding-financing {
     padding: 0 15px;
   }
+
   .no-mobile {
     display: none;
   }
+
   .comfortlife-box {
     display: flex;
     justify-content: center;

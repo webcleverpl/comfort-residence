@@ -354,8 +354,8 @@
                                     słonecznego. Obecnie jej rozwój następuje
                                     w bardzo szybkim tempie, dlatego zdecydowaliśmy się na wyposażenie domów w Banino w
                                     panele fotowoltaiczne, które są w
-                                    pełni bezpieczne dla środowiska. Dzięki nim mieszkańcy naszych segmentów będą nie
-                                    tylko mniej płacić za rachunki, ale
+                                    pełni bezpieczne dla środowiska. Dzięki nim mieszkańcy naszych lokali mieszkalnych
+                                    będą nie tylko mniej płacić za rachunki, ale
                                     również przyczynią się do redukcji powstawania szkodliwych związków, gazów
                                     cieplarnianych oraz emisji CO2.
                                 </p>
@@ -420,6 +420,13 @@
                                     required="required" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
                                 <input class="au-input" type="text" name="phone" placeholder="Telefon"
                                     required="required">
+                                <select class="au-select" style="color: #888;" name="yardage" id="yardage-select"
+                                    required="required">
+                                    <option value="">Wybierz metraż</option>
+                                    <option value="dog">50m2</option>
+                                    <option value="cat">75m2</option>
+                                    <option value="hamster">105m2</option>
+                                </select>
                             </div>
                             <div class="col-md-6 p-r-0">
                                 <textarea class="au-textarea" name="message" placeholder="Wiadomość*"
@@ -523,9 +530,8 @@
             </div>
             <div class="col-lg-6 text-left-body flex-inwestycje">
                 <h2 class="title-1">Migowskie Wzgórza</h2>
+                <h4 style="margin: 1rem 0;"><strong>Kameralne osiedle z tarasami.</strong></h4>
                 <p class="mb-4" style="text-align: justify;">
-                    <strong>Kameralne osiedle z tarasami.</strong>
-                    <br>
                     Od kolorystyki, przez koncepcję klatki schodowej, po projekty klamek i okuć drzwiowych.
                     Wygląd kompleksu został dokładnie zaplanowany przez specjalistów, którzy zadbali o
                     funkcjonalność, wygodę i spójność wszystkich budynków. To największa do tej pory budowa
@@ -548,11 +554,13 @@
 
             <div class="col-lg-6 text-left-body flex-inwestycje">
                 <h2 class="title-1">Willa Wrzos</h2>
-                <p class="mb-4" style="text-align: justify;"> <strong>Willa Wrzos to kameralne osiedle segmentów o
+                <h4 style="margin: 1rem 0;">
+                    <strong>Willa Wrzos to kameralne osiedle segmentów o
                         nowoczesnej architekturze. Wszystkie segmenty posiadają indywidualne ogródki oraz garaże i
                         miejsce postojowe.
-                    </strong><br>
-
+                    </strong>
+                </h4>
+                <p class="mb-4" style="text-align: justify;">
                     W ramach inwestycji powstało 20 trzypoziomowych segmentów o zróżnicowanych metrażach
                     od 121 m2 do 202 m2. Willa Wrzos spotkała się z bardzo dużym zainteresowaniem i
                     właśnie dlatego już niebawem uruchamiamy kolejną inwestycję w tej lokalizacji.
@@ -665,8 +673,10 @@
 
     <div class="container mb-5">
         <div class="row">
-            <div class="col-md-6" style="display: flex; flex-direction: column; justify-content: center;">
-                <img src="/images/svg/Comfort Residence cropped.svg" alt="comfort residence logo">
+            <div class="col-md-6"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img id="ocomfortresidence-logo" src="/images/svg/Comfort Residence cropped.svg"
+                    alt="comfort residence logo">
             </div>
             <div class="col-md-6" style="display: flex; flex-direction: column; justify-content: center;">
                 <br>

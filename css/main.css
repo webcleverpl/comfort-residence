@@ -19631,3 +19631,7 @@ textarea {
 select {
   font-size: 14px;
 }
+
+#footer-logo {
+  width: 200px;
+}

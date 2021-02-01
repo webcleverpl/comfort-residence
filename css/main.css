@@ -77,7 +77,7 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h5 {
@@ -3598,10 +3598,11 @@ a:hover {
 }
 
 .text--s18-40 {
-  font-size: 16px;
-  line-height: -webkit-calc(40/18);
+  font-size: 14px;
+  /* line-height: -webkit-calc(40/18);
   line-height: -moz-calc(40/18);
-  line-height: calc(40 / 18);
+  line-height: calc(40 / 18); */
+  line-height: 1.618em;
 }
 
 .text--c2 {
@@ -19607,4 +19608,21 @@ h6 {
 
 #ocomfortresidence-logo {
   max-width: 75%;
+}
+
+p {
+  line-height: 1.618em;
+  font-size: 14px;
+}
+
+ul {
+  font-size: 14px;
+}
+
+input {
+  font-size: 14px;
+}
+
+textarea {
+  font-size: 14px;
 }

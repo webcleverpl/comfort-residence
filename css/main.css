@@ -19602,7 +19602,8 @@ h6 {
   cursor: pointer;
 }
 
-#partnerzy-5, #partnerzy-6 {
+#partnerzy-5,
+#partnerzy-6 {
   width: 200px;
 }
 
@@ -19624,5 +19625,9 @@ input {
 }
 
 textarea {
+  font-size: 14px;
+}
+
+select {
   font-size: 14px;
 }

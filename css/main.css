@@ -3931,9 +3931,9 @@ textarea {
   outline: none;
 }
 
-input {
+/* input {
   width: 100%;
-}
+} */
 
 textarea {
   width: 100%;
@@ -19634,4 +19634,17 @@ select {
 
 #footer-logo {
   width: 200px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 1.618em;
+}
+
+.zgoda1-wrapper, .zgoda2-wrapper {
+  display: flex;
+}
+
+input[type=checkbox] {
+  margin: 5px;
 }

@@ -19641,10 +19641,55 @@ label {
   line-height: 1.618em;
 }
 
-.zgoda1-wrapper, .zgoda2-wrapper {
+.zgoda1-wrapper,
+.zgoda2-wrapper {
   display: flex;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin: 5px;
+}
+
+.cookies-container {
+  z-index: 99999;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(20, 20, 20, 0), rgba(20, 20, 20, 1));
+  font-size: 0.675rem;
+  backdrop-filter: blur(16px);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 2rem;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+@media screen and (max-width: 960px) {
+  .cookies-container {
+    background: linear-gradient(
+      45deg,
+      rgba(20, 20, 20, 0.3),
+      rgba(20, 20, 20, 1)
+    );
+  }
+}
+
+.cookies-button {
+  font-size: 13;
+  transition: color 0.25s ease-out, background-color 0.25s ease-out;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.16);
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.cookies-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.3);
 }

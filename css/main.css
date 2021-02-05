@@ -19693,3 +19693,50 @@ input[type="checkbox"] {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+@media (min-width: 600px) {
+  .css-1f5quo {
+    padding: 2rem 10vw;
+  }
+}
+
+.css-1f5quo p {
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+}
+
+.css-1f5quo ol {
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+
+.css-1f5quo ol, .css-1f5quo li {
+    font-size: 0.875rem;
+}
+
+.css-1f5quo table {
+    max-width: 100vw;
+    font-size: 0.75rem;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px 0px 30px;
+    box-sizing: border-box;
+    overflow: scroll;
+    border: 1px solid rgba(167, 167, 167, 0.2) !important;
+}
+
+.css-1f5quo td {
+    padding: 30px 5px;
+    border: 1px solid rgba(167, 167, 167, 0.2) !important;
+}
+
+.css-1f5quo ul {
+  display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}

@@ -19701,42 +19701,57 @@ input[type="checkbox"] {
 }
 
 .css-1f5quo p {
-    font-size: 0.875rem;
-    margin-bottom: 2rem;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
 }
 
 .css-1f5quo ol {
-    padding: 0.5rem;
-    margin-left: 2rem;
+  padding: 0.5rem;
+  margin-left: 2rem;
 }
 
-.css-1f5quo ol, .css-1f5quo li {
-    font-size: 0.875rem;
+.css-1f5quo ol,
+.css-1f5quo li {
+  font-size: 0.875rem;
 }
 
 .css-1f5quo table {
-    max-width: 100vw;
-    font-size: 0.75rem;
-    text-align: left;
-    border-collapse: collapse;
-    width: 100%;
-    margin: 0px 0px 30px;
-    box-sizing: border-box;
-    overflow: scroll;
-    border: 1px solid rgba(167, 167, 167, 0.2) !important;
+  max-width: 100vw;
+  font-size: 0.75rem;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0px 0px 30px;
+  box-sizing: border-box;
+  overflow: scroll;
+  border: 1px solid rgba(167, 167, 167, 0.2) !important;
 }
 
 .css-1f5quo td {
-    padding: 30px 5px;
-    border: 1px solid rgba(167, 167, 167, 0.2) !important;
+  padding: 30px 5px;
+  border: 1px solid rgba(167, 167, 167, 0.2) !important;
 }
 
 .css-1f5quo ul {
   display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.investment-banino {
+  background-repeat: no-repeat;
+  background-image: url(../img/banino-bg.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.investment-banino .value {
+  font-size: 20px;
 }

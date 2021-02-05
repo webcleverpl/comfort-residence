@@ -19752,6 +19752,14 @@ input[type="checkbox"] {
   min-height: 500px;
 }
 
+.investment-banino .entry-meta__item {
+  display: flex;
+  justify-content: center;
+}
+
 .investment-banino .value {
+  display: inline-block;
+  max-width: 75%;
+  color: #fff;
   font-size: 20px;
 }

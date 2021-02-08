@@ -5501,9 +5501,9 @@ button {
   position: relative;
 }
 
-.header-mobile .header-mobile__bar {
+/* .header-mobile .header-mobile__bar {
   padding: 15px 0;
-}
+} */
 
 .header-mobile .header-mobile__bar-inner {
   display: -webkit-box;
@@ -18632,7 +18632,7 @@ button:focus {
 
 .logo {
   width: 250px;
-  padding: 15px 0;
+  /* padding: 15px 0; */
   padding-left: 70px;
 }
 .logo img {
@@ -18859,15 +18859,16 @@ box-shadow: 5px 5px 5px 2px #551CAA; */
   .logo {
     width: 120px;
     padding-left: inherit;
-    padding: 5px 0;
+    /* padding: 5px 0; */
   }
 
   .about-us {
     padding: 4em 0;
   }
-  .header-mobile .header-mobile__bar {
+
+  /* .header-mobile .header-mobile__bar {
     padding: 5px 0;
-  }
+  } */
 }
 
 @media (min-width: 992px) {
@@ -19802,4 +19803,10 @@ input[type="checkbox"] {
 
 .hidden {
   opacity: 0;
+}
+
+@media (min-width: 1150px) {
+  .logo img {
+    padding: 15px 0;
+  }
 }

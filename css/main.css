@@ -19763,3 +19763,43 @@ input[type="checkbox"] {
   color: #fff;
   font-size: 20px;
 }
+
+.cookies-container a {
+  font-weight: bold;
+}
+
+.cookies-container a:hover {
+  color: #fff;
+}
+
+/* slide-in in view */
+.come-in-left {
+  transform: translateX(-500px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in-right {
+  transform: translateX(500px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.already-visible {
+  transform: translateX(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* fade-in in view */
+
+.fade-in-element {
+  animation: fade-in 1s ease-in;
+}
+
+.hidden {
+  opacity: 0;
+}

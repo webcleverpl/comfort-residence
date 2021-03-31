@@ -19668,6 +19668,7 @@ label {
 
 input[type="checkbox"] {
   margin: 5px;
+  width: 50px;
 }
 
 .cookies-container {
@@ -19888,3 +19889,4 @@ input[type="checkbox"] {
 #tablepress-1 .row-hover {
   font-size: 14px;
 }
+

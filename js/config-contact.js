@@ -6,7 +6,7 @@
 
     try {
 
-        var contactFormWrapper = $('.js-contact-form');
+        // var contactFormWrapper = $('.js-contact-form');
 
         contactFormWrapper.each(function () {
            var that = $(this);

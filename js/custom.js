@@ -1,6 +1,10 @@
 const cookiesBtn = document.querySelector('#cookies-button');
 const cookiesContainer = document.querySelector('#cookies-container');
 
+const left = document.querySelectorAll(".slide-in-left");
+const right = document.querySelectorAll(".slide-in-right");
+const fade = document.querySelectorAll(".custom-fade-in");
+
 window.onload = function () {
     // if the user hasn't agreed to cookies
     if (localStorage.getItem('cookies') !== 'true') {
@@ -13,8 +17,7 @@ cookiesBtn.addEventListener('click', () => {
     cookiesContainer.style.display = 'none';
 });
 
-
-// slide-in in view effect
+// slide-in and fade-in functionality
 const isElementXPercentInViewport = function (el, percentVisible) {
     let
         rect = el.getBoundingClientRect(),
@@ -25,10 +28,6 @@ const isElementXPercentInViewport = function (el, percentVisible) {
         Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
     )
 };
-
-const left = document.querySelectorAll(".slide-in-left");
-const right = document.querySelectorAll(".slide-in-right");
-const fade = document.querySelectorAll(".custom-fade-in");
 
 window.addEventListener("scroll", () => {
     left.forEach((el) => {

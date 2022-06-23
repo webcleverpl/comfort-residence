@@ -19921,3 +19921,39 @@ input[type="checkbox"] {
 .video-overlay-play-button.is-hidden {
   display: none;
 }
+
+.mytable .wpb_wrapper {
+  position: relative;
+  overflow: hidden;
+  max-height: 350px;
+}
+
+.mytable .tablepress,
+.mytable .tablepress thead th,
+.mytable .tablepress a {
+  color: transparent;
+  text-shadow: 0 0 5px rgb(0 0 0 / 50%);
+}
+
+.sold-phrase-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 28, 170, .8);
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sold-phrase-wrapper p {
+  font-size: 18px;
+  margin-top: 10px;
+}

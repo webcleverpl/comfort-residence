@@ -1,5 +1,5 @@
-video/
-img/
-images/
-documentation/
-pdf/
+video/*
+img/*
+images/*
+documentation/*
+pdf/*

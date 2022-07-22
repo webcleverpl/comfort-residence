@@ -419,7 +419,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 style="text-align: center">Segmenty</h2>
     </div>
 
-    <div class="container">
+    <style>
+        .qupto-cloud_viewer {
+          border: none !important;
+          height: 80vh !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          width: 100% !important;
+        }
+      
+        @media only screen and (max-width: 768px) {
+          .qupto-cloud_viewer {
+            height: 85vh !important;
+          }
+        }
+      </style>
+        
+      <div id="qupto-cloud-container-id" class="qupto-cloud-container">
+        <iframe id="qupto-cloud-viewer-id" class="qupto-cloud_viewer" src="https://willa-wrzos-ii.sensevr.pl"></iframe>
+      </div>
+
+    <!-- <div class="container">
         <div class="vc_row wpb_row vc_row-fluid">
             <div class="mytable wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_column vc_column_container vc_col-sm-12 wpb_start_animation animated">
                 <div class="vc_column-inner">
@@ -606,7 +626,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="kontakt" class="custom-row">
         <h2 style="text-align: center">Jesteś zainteresowany 2 etapem?</h2>

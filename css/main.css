@@ -5355,11 +5355,8 @@ button {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .header-1 .header-nav-menu {
@@ -5380,6 +5377,26 @@ button {
 
 .header-1--light .menu a:hover {
   color: #ccc;
+}
+
+.header-phone-wrapper {
+  display: none;
+}
+.header-phone-wrapper a {
+  font-size: 13px;
+  color: #222;
+  transition: color .3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .header-phone-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 47px 8px 0;
+  }
+  .header-phone-wrapper a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 /* HEADER 2 */
@@ -5679,6 +5696,10 @@ button {
   top: 20px;
 }
 
+.header__bar {
+  padding: 0 0 10px;
+}
+
 /* HEADER FIXED */
 .header--fixed {
   position: fixed;
@@ -5693,7 +5714,7 @@ button {
 }
 
 .header--fixed .menu-item a {
-  padding: 17px 22px;
+  padding: 10px 18px;
 }
 
 /* ==========================================================================
@@ -5705,6 +5726,7 @@ button {
 
 .menu a {
   font-size: 13px;
+  line-height: 1;
   color: #222;
   text-transform: capitalize;
 }
@@ -5719,7 +5741,7 @@ button {
 
 .menu-item a {
   display: block;
-  padding: 26px 22px;
+  padding: 10px 18px;
 }
 
 . {
@@ -8347,7 +8369,8 @@ button:focus {
   margin: 0 auto;
 }
 
-#apartamenty h2 {
+#apartamenty h2,
+#plan-osiedla h2 {
   color: #000;
   font-weight: 600;
   text-transform: uppercase;
@@ -8355,7 +8378,8 @@ button:focus {
   margin-bottom: 40px;
 }
 
-#apartamenty h2:after {
+#apartamenty h2:after,
+#plan-osiedla h2:after {
   content: "";
   background: #551caa;
   height: 8px;
@@ -18650,7 +18674,7 @@ button:focus {
 }
 
 .logo {
-  width: 250px;
+  width: 180px;
   /* padding: 15px 0; */
   padding-left: 70px;
 }
@@ -19976,26 +20000,6 @@ input[type="checkbox"] {
   object-fit: cover;
 }
 
-.header-phone-wrapper {
-  display: none;
-}
-.header-phone-wrapper a {
-  font-size: 13px;
-  color: #222;
-  transition: color .3s ease-in-out;
-}
-@media (min-width: 768px) {
-  .header-phone-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 47px 0 0;
-  }
-  .header-phone-wrapper a {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-}
-
 @media (hover: hover) {
   .header-phone-wrapper a:hover {
     color: #551caa;
@@ -20016,7 +20020,7 @@ input[type="checkbox"] {
 @media (min-width: 992px) {
   .side-quick-menu {
     width: auto;
-    top: 250px;
+    top: 150px;
     bottom: unset;
     left: unset;
     right: 0;

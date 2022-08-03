@@ -14,7 +14,7 @@
             outClass: 'fade-out',
             inDuration: 800,
             outDuration: 800,
-            linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([class^="chosen-single"])',
+            linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([class^="chosen-single"]):not([data-js-animation^="no-animate"])',
             loading: true,
             loadingParentElement: 'html',
             loadingClass: 'loader-wrapper',

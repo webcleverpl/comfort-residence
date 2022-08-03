@@ -1,3 +1,11 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Redirect 301 /contact.html /kontakt.html
+Redirect 301 /offer.html /nasze-uslugi.html
+Redirect 301 /about-us.html /o-nas.html
+Redirect 301 /financing.html /finansowanie.html
+
+</IfModule>

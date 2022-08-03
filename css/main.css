@@ -8316,11 +8316,13 @@ button:focus {
   margin-top: 10px;
 }
 
-#kontakt {
+#kontakt,
+#formularz {
   margin-bottom: 20px;
 }
 
-#kontakt h2 {
+#kontakt h2,
+#formularz h2 {
   color: #000;
   font-weight: 600;
   text-transform: uppercase;
@@ -8328,7 +8330,8 @@ button:focus {
   margin-bottom: 40px;
 }
 
-#kontakt h2:after {
+#kontakt h2:after,
+#formularz h2:after {
   content: "";
   background: #551caa;
   height: 8px;
@@ -19956,4 +19959,211 @@ input[type="checkbox"] {
 .sold-phrase-wrapper p {
   font-size: 18px;
   margin-top: 10px;
+}
+
+.financing-image-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+}
+.financing-image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-phone-wrapper {
+  display: none;
+}
+.header-phone-wrapper a {
+  font-size: 13px;
+  color: #222;
+  transition: color .3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .header-phone-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 47px 0 0;
+  }
+  .header-phone-wrapper a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (hover: hover) {
+  .header-phone-wrapper a:hover {
+    color: #551caa;
+  }
+}
+
+.side-quick-menu {
+  position: fixed;
+  width: 100%;
+  top: initial;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  z-index: 9000;
+}
+
+@media (min-width: 992px) {
+  .side-quick-menu {
+    width: auto;
+    top: 250px;
+    bottom: unset;
+    left: unset;
+    right: 0;
+    flex-direction: column;
+  }
+}
+
+.side-quick-menu-item {
+  width: 25%;
+  overflow: hidden;
+  border-right: 1px solid #fff;
+}
+
+@media (min-width: 992px) {
+  .side-quick-menu-item {
+    width: auto;
+  }
+}
+
+.side-quick-menu-item a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #222222;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  /* border-right: 2px solid #888888; */
+}
+
+@media (min-width: 992px) {
+  .side-quick-menu-item {
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.side-quick-menu-item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: #551caa;
+  transition: width 0.25s;
+  display: none;
+}
+
+.side-quick-menu-item a i {
+  z-index: 11;
+}
+
+@media (min-width: 992px) {
+  .side-quick-menu-item a {
+    width: 60px;
+  }
+}
+
+.side-quick-menu-item a #mini-cart-count {
+  position: absolute;
+  top: 5px;
+  left: calc(50% + 16px);
+  transform: translateX(-50%);
+  background-color: #222;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+@media (min-width: 992px) {
+  .side-quick-menu-item a #mini-cart-count {
+    top: 5px;
+    left: unset;
+    right: 5px;
+    transform: unset;
+  }
+}
+
+.side-quick-menu-item:first-of-type {
+  border-top-left-radius: 20px;
+}
+
+.side-quick-menu-item:last-of-type {
+  border-top-right-radius: 20px;
+  border-right: 0;
+}
+
+@media (min-width: 992px) {
+  .side-quick-menu-item:last-of-type {
+    border-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+.side-quick-menu-hover-box {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 500px;
+  height: 300px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-30px);
+  transition-duration: 250ms;
+}
+
+@media (max-width: 991px) {
+  .trx_addons_scroll_to_top.show {
+    bottom: 80px !important;
+  }
+}
+.side-quick-menu-item a:hover {
+  color: #ffffff !important;
+}
+@media (hover:hover) {
+  .side-quick-menu-item a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #551caa;
+    transition: width 0.25s;
+    display: block;
+  }
+  .side-quick-menu-item:hover .side-quick-menu-hover-box {
+    transform: translateY(0);
+    opacity: 1;
+    transition-duration: 250ms;
+    pointer-events: auto;
+  }
+  
+  .side-quick-menu-item a:hover::before {
+    width: 100%;
+  }
 }

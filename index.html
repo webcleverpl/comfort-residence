@@ -73,6 +73,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="header__bar">
                     <div class="wrap wrap--w1790">
                         <div class="container-fluid">
+                            <div class="header-phone-wrapper">
+                                <a href="mailto:kontakt@comfortresidence.pl">kontakt@comfortresidence.pl</a>
+                                <a href="tel:+48531696681">+48 531 696 681</a>
+                            </div>
                             <div class="header__content">
                                 <div class="logo">
                                     <a href="index.html">
@@ -87,23 +91,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                             </li>
                                             <li class="menu-item  ">
-                                                <a href="about-us.html">O nas</a>
+                                                <a href="o-nas.html">O nas</a>
 
                                             </li>
                                             <li class="menu-item">
-                                                <a href="offer.html">Nasze usługi</a>
+                                                <a href="nasze-uslugi.html">Nasze usługi</a>
                                             </li>
                                             <li class="menu-item  ">
-                                                <a href="./inwestycje-zrealizowane.html">Inwestycje</a>
+                                                <a href="inwestycje-zrealizowane.html">Zrealizowane Inwestycje</a>
 
                                             </li>
                                             <li class="menu-item  ">
-                                                <a href="financing.html">Finansowanie</a>
+                                                <a href="finansowanie.html">Finansowanie</a>
 
                                             </li>
 
                                             <li class="menu-item">
-                                                <a href="contact.html">Kontakt</a>
+                                                <a href="kontakt.html">Kontakt</a>
                                             </li>
                                             <li class="menu-item">
                                                 <a href="https://www.facebook.com/c12346778" style="padding: 0;"><img style="width: 24px;" src="./img/facebook.svg" alt="fb" /></a>
@@ -113,16 +117,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </li>
                                         </ul>
                                     </nav>
-                                    <!-- <div class="header-social">
-                                        <ul class="list-social">
-                                            <li class="list-social__item">
-                                                <a class="ic-fb" href="#">
-                                                    <i class="zmdi zmdi-facebook"></i>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -151,19 +145,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <a href="banino.html">Banino Residence</a>
                             </li>
                             <li class="menu-item">
-                                <a href="about-us.html">O nas</a>
+                                <a href="o-nas.html">O nas</a>
                             </li>
                             <li class="menu-item">
-                                <a href="offer.html">Nasze usługi</a>
+                                <a href="nasze-uslugi.html">Nasze usługi</a>
                             </li>
                             <li class="menu-item">
-                                <a href="inwestycje-zrealizowane.html">Inwestycje</a>
+                                <a href="inwestycje-zrealizowane.html">Zrealizowane Inwestycje</a>
                             </li>
                             <li class="menu-item">
-                                <a href="financing.html">Finansowanie</a>
+                                <a href="finansowanie.html">Finansowanie</a>
                             </li>
                             <li class="menu-item">
-                                <a href="contact.html">Kontakt</a>
+                                <a href="kontakt.html">Kontakt</a>
                             </li>
                             <li class="menu-item" style="display: flex;">
                                 <a target="_blank" href="https://www.facebook.com/c12346778" style="padding: 7px 0; margin-left: 15px;"><img style="width: 22px;" src="./img/facebook.svg" alt="fb" /></a>
@@ -184,6 +178,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img id="custom-topmost-banner-big" src="/images/nowa-inwestycja.png" height="720" width="1920" alt="Migowskie_dzień_otwart" class="slider-930 slide-936" draggable="false">
                 <img id="custom-topmost-banner-small" src="/images/nowainwestycja_png kopia.png" height="720" width="1920" alt="Migowskie_dzień_otwart" class="slider-930 slide-936" draggable="false">
             </div>
+            <div id="formularz" class="custom-row">
+                <h2 style="text-align: center">Jesteś zainteresowany 2 etapem?</h2>
+            </div>
+            <section class="section p-b-80">
+                <div class="container">
+                    <h4 class="text-center mb-5">Wypełnij formularz w celu umówienia rozmowy i rezerwacji najlepszych lokali jeszcze przed wprowadzeniem oferty.</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form class="form-contact js-contact-form" method="POST" action="php/send.php">
+                                <div class="form-row no-gutters custom-fade-in">
+                                    <div class="col-md-6">
+                                        <input class="au-input" type="text" name="name" placeholder="Imię" required="required">
+                                        <input class="au-input" type="email" name="email" placeholder="Adres email" required="required" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                                        <input class="au-input" type="text" name="phone" placeholder="Telefon" required="required">
+                                        <select class="au-select" style="color: #888;" name="yardage" id="yardage-select" required="required">
+                                            <option value="nieokreślony">Wybierz metraż</option>
+                                            <option value="50m2">50m2</option>
+                                            <option value="75m2">75m2</option>
+                                            <option value="105m2">105m2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 p-r-0">
+                                        <textarea class="au-textarea" name="message" placeholder="Wiadomość*" required="required"></textarea>
+                                        <!-- <div class="text-right">
+                                                <button class="au-btn au-btn--solid" type="submit">Wyślij wiadomość</button>
+                                            </div> -->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col custom-fade-in">
+                                        <div class="zgoda1-wrapper">
+                                            <input id="zgoda1" name="zgoda1" type="checkbox" value="tak" required="required">
+                                            <label for="zgoda1">Zgodnie z ustawą z dnia 18 lipca 2002 r. świadczeniu
+                                                usług drogą elektroniczną (Dz.U. z 2002 r. Nr 144, poz. 1204 z późn.
+                                                zm.) wyrażam zgodę na otrzymywanie za pomocą poczty elektronicznej
+                                                informacji związanych ze złożonym zapytaniem przez Comfort Residence z
+                                                siedzibą w Warszawie przy ul. Moniuszki 22.
+                                            </label>
+                                        </div>
+                                        <div class="zgoda2-wrapper">
+                                            <input id="zgoda2" name="zgoda2" type="checkbox" value="tak" required="required">
+                                            <label for="zgoda2">Wyrażam zgodę na używanie przez Comfort Residence z
+                                                siedzibą w Warszawie przy ul. Moniuszki 22, telekomunikacyjnych urządzeń
+                                                końcowych (telefonu komórkowego), których jestem użytkownikiem dla celów
+                                                przekazania informacji związanych ze złożonym zapytaniem zgodnie z art. 172
+                                                ustawy z dnia 16 lipca 2004 r. Prawo telekomunikacyjne (Dz.U. 2004 nr 171 poz.
+                                                1800).
+                                            </label>
+                                        </div>
+                                        <p><i>Zaznacz zgody poprzez kliknięcie na tekst lub na checkbox.</i></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="au-btn au-btn--solid" type="submit">Wyślij wiadomość</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="infographics" class="custom-row">
                 <div class="row">
                     <div class="custom-col col-md-4">
@@ -416,7 +472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div id="apartamenty" class="custom-row">
-        <h2 style="text-align: center">Segmenty</h2>
+        <h2 style="text-align: center">Plan Osiedla</h2>
     </div>
 
     <style>
@@ -819,91 +875,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <div id="wczesniejsze-inwestycje" class="custom-row">
-        <h2 style="text-align: center">Wcześniejsze <br> inwestycje</h2>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-lg-6-slider slide-in-left" style="overflow: visible;">
-                <div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;img/migowskie-wzgorza.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;"
-                    src="img/migowskie-wzgorza.jpg"></div>
-                <div class="rev_slider js-rev revslider-initialised tp-simpleresponsive" data-version="5.4.4" style="margin-top: 0px; margin-bottom: 0px; height: 308px;" data-rev-stylearrow="au-rev-arrow-1" data-rev-bullets="true" data-rev-stylebullet="au-rev-bullet-1"
-                    data-rev-voffbullet="55" id="revslider-570" data-slideactive="rs-996846">
-                    <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 721px; height: 100%; max-height: none; left: 0px;">
-                        <li class="rev-item rev-item-1 tp-revslider-slidesli active-revslide" data-transition="crossfade" style="perspective: 6000px; width: 100%; height: 100%; overflow: hidden; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
-                            <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                                <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img class="rev-slidebg defaultimg" src="img/migowskie-wzgorza.jpg" alt="Migowskie Wzgórza">-->
-
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6 text-left-body flex-inwestycje slide-in-right">
-                <h2 class="title-1">Migowskie Wzgórza</h2>
-                <h4 style="margin: 1rem 0;"><strong>Kameralne osiedle z tarasami.</strong></h4>
-                <p class="mb-4" style="text-align: justify;">
-                    Od kolorystyki, przez koncepcję klatki schodowej, po projekty klamek i okuć drzwiowych. Wygląd kompleksu został dokładnie zaplanowany przez specjalistów, którzy zadbali o funkcjonalność, wygodę i spójność wszystkich budynków. To największa do tej pory
-                    budowa wielorodzinna i jednocześnie sprawdzian dla naszej grupy, który zakończył się sukcesem.
-                </p>
-
-                <a class="au-btn au-btn--arrow btn-inwestycje-longer" href="https://migowskiewzgorza.pl/" target="_blank" rel="noopener noreferrer">Wejdź na stronę inwestycji
-                    <i class="zmdi zmdi-arrow-right ic-arrow"></i>
-                </a>
-                <!-- <div id="willa-wrzos" class="project-more">
-                            <p>Projekt realizowany wraz z: <img src="./img/comfortlife-logo.png"
-                                    alt="comfort life logo">
-                            </p>
-                        </div> -->
-            </div>
-        </div>
-
-        <div class="row mobile-reverse">
-
-            <div class="col-lg-6 text-left-body flex-inwestycje slide-in-left">
-                <h2 class="title-1">Willa Wrzos</h2>
-                <h4 style="margin: 1rem 0;">
-                    <strong>Willa Wrzos to kameralne osiedle segmentów o
-                        nowoczesnej architekturze. Wszystkie segmenty posiadają indywidualne ogródki oraz garaże i
-                        miejsce postojowe.
-                    </strong>
-                </h4>
-                <p class="mb-4" style="text-align: justify;">
-                    W ramach inwestycji powstało 20 trzypoziomowych segmentów o zróżnicowanych metrażach od 121 m2 do 202 m2. Willa Wrzos spotkała się z bardzo dużym zainteresowaniem i właśnie dlatego już niebawem uruchamiamy kolejną inwestycję w tej lokalizacji.
-                </p>
-
-                <a class="au-btn au-btn--arrow btn-inwestycje-longer" href="https://comfortlife.eu/willa-wrzos/" target="_blank" rel="noopener noreferrer">Wejdź na stronę inwestycji
-                    <i class="zmdi zmdi-arrow-right ic-arrow"></i>
-                </a>
-
-                <!-- <div id="segmenty-chopina" class="project-more">
-                            <a class="au-btn au-btn--arrow btn-inwestycje" href="/willa-wrzos.html">Dowiedz
-                                się
-                                więcej
-                                <i class="zmdi zmdi-arrow-right ic-arrow"></i>
-                            </a>
-                            <p>Projekt realizowany wraz z: <img src="./img/comfortlife-logo.png" alt="Willa Wrzos"> </p>
-                        </div> -->
-            </div>
-            <div class="col-lg-6 col-lg-6-slider slide-in-right" style="overflow: visible;">
-                <div class="rev_slider js-rev revslider-initialised tp-simpleresponsive" data-version="5.4.4" style="margin-top: 0px; margin-bottom: 0px; height: 308px;" data-rev-stylearrow="au-rev-arrow-1" data-rev-bullets="true" data-rev-stylebullet="au-rev-bullet-1"
-                    data-rev-voffbullet="55" id="revslider-571" data-slideactive="rs-578030">
-                    <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none; left: 0px;">
-                        <li class="rev-item rev-item-1 tp-revslider-slidesli active-revslide" data-transition="crossfade" style="perspective: 6000px; width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
-                            <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                                <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img class="rev-slidebg defaultimg" src="img/willa-wrzos.jpg" alt="comfort-residence">-->
-                                <div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;img/willa-wrzos.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;"
-                                    src="img/willa-wrzos.jpg"></div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="ocomfortresidence" class="custom-row">
         <h2 style="text-align: center">O Deweloperze</h2>
     </div>
@@ -957,37 +928,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="https://reklamadlabiznesu.pl/" target="_blank" rel="noopener">
                     <img id="partnerzy-6" src="/images/partnerzy-6.png" alt="reklama dla biznesu">
                 </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="finansowanie" class="custom-row">
-        <h2 style="text-align: center">Finansowanie</h2>
-    </div>
-
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 slide-in-left">
-                <img src="/images/finansowanie-grafika.jpg" alt="finansowanie">
-            </div>
-            <div class="col-md-6 slide-in-right">
-                <p style="text-align: justify;">
-                    Chcąc zapewnić kompleksową obsługę naszych Klientów stworzyliśmy Dział Kredytów Hipotecznych, dzięki któremu mogą Państwo skorzystać z oferty niezależnego Eksperta Finansowego. Nasi Doradcy to specjaliści w finansowaniu zakupu nieruchomości z wieloletnim
-                    stażem.
-                    <strong>Zalety
-                        kontaktu z nimi:</strong>
-                </p>
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li>Otrzymasz specjalne oferty cenowe z najniższą marżą na rynku.</li>
-                    <li>Indywidualnie negocjujemy obniżenie oprocentowania z bankiem.</li>
-                    <li>Uzyskasz sprawnie finansowanie czując się przy tym pewnie i bezpiecznie.</li>
-                    <li>Zapewnimy przyśpieszony proces rozpatrywania wniosku.</li>
-                    <li>Wypełnimy i skompletujemy wszystkie wymagane dokumenty.</li>
-                </ul>
-
-                <p style="text-align: justify;">
-                    Już dziś skontaktuj się z Doradcą i poznaj oferty kredytowe przygotowane specjalnie dla Klientów firmy Comfort Residence.
-                </p>
             </div>
         </div>
     </div>
@@ -1052,19 +992,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <h4 class="widget-title">Menu</h4>
                             <ul>
                                 <li>
-                                    <a href="about-us.html">O Nas</a>
+                                    <a href="o-nas.html">O Nas</a>
                                 </li>
                                 <li>
-                                    <a href="offer.html">Nasze usługi</a>
+                                    <a href="nasze-uslugi.html">Nasze usługi</a>
                                 </li>
                                 <li>
-                                    <a href="inwestycje-zrealizowane.html">Inwestycje</a>
+                                    <a href="inwestycje-zrealizowane.html">Zrealizowane Inwestycje</a>
                                 </li>
                                 <li>
-                                    <a href="financing.html">Finansowanie</a>
+                                    <a href="finansowanie.html">Finansowanie</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Kontakt</a>
+                                    <a href="kontakt.html">Kontakt</a>
                                 </li>
                                 <li>
                                     <a href="privacy-policy.html">Polityka prywatności</a>
@@ -1151,6 +1091,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    <div class="side-quick-menu">
+
+        <div class="side-quick-menu-item">
+            <a href="#formularz">
+                <i class="fa fa-comment-alt"></i>
+            </a>
+        </div>
+
+        <div class="side-quick-menu-item">
+            <a href="https://goo.gl/maps/zghiECBJbSx5zvLX7" target="_blank" rel="noopener noreferrer nofollow">
+                <i class="fa fa-map"></i>
+            </a>
+        </div>
+
+        <div class="side-quick-menu-item">
+            <a href="mailto:kontakt@comfortresidence.pl">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="side-quick-menu-item">
+            <a href="tel:+48531696681">
+                <i class="fa fa-phone"></i>
+            </span></a>
+        </div>
+
+    </div>
 
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="108089867719396" theme_color="#6734b3" logged_in_greeting="Dzień dobry! Jak możemy ci pomóc?" logged_out_greeting="Dzień dobry! Jak możemy ci pomóc?">

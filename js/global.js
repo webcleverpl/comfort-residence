@@ -916,6 +916,18 @@
 
 
 
-
+(function ($) {
+    'use strict';
+    const checkboxWrapper = $('.checkbox-wrapper');
+    if( checkboxWrapper.length ) {
+        checkboxWrapper.on('click', '.expand-button', function(e){
+            e.preventDefault;
+            $(this).parent().toggleClass('expanded');
+            $(this).text(function(i, text){
+                return text === "rozwiń" ? "zwiń" : "rozwiń";
+            });
+        });
+    }
+})(jQuery);
 
 

@@ -20031,6 +20031,7 @@ input[type="checkbox"] {
 .side-quick-menu-item {
   width: 25%;
   overflow: hidden;
+  border-top: 1px solid #fff;
   border-right: 1px solid #fff;
 }
 
@@ -20111,15 +20112,18 @@ input[type="checkbox"] {
 }
 
 .side-quick-menu-item:first-of-type {
-  border-top-left-radius: 20px;
+  border-top-left-radius: 0;
 }
 
 .side-quick-menu-item:last-of-type {
-  border-top-right-radius: 20px;
+  border-top-right-radius: 0;
   border-right: 0;
 }
 
 @media (min-width: 992px) {
+  .side-quick-menu-item:first-of-type {
+    border-top-left-radius: 20px;
+  }
   .side-quick-menu-item:last-of-type {
     border-bottom: 0;
     border-top-right-radius: 0;
@@ -20174,6 +20178,7 @@ input[type="checkbox"] {
     color: #551caa;
   }
 }
+
 .lead-form {
   background-color: #551caa;
 }
@@ -20230,7 +20235,10 @@ input[type="checkbox"] {
   gap: 15px;
   font-size: 12px;
   font-weight: 300;
-  cursor:
+  margin-bottom: 15px;
+}
+.checkbox-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .checkbox-item input[type="checkbox"] {
@@ -20268,8 +20276,17 @@ input[type="checkbox"] {
 .expanded .checkbox-text-hidden {
   display: inline;
 }
-
-.expand-button {
+.checkbox-label-wrapper {
+  line-height: 1.1em;
+}
+.checkbox-label-wrapper label {
+  display: inline;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: normal;
+}
+.checkbox-label-wrapper .expand-button {
+  display: inline;
   cursor: pointer;
   color: rgba(255, 255, 255, .6);
   transition: color .3s ease-in-out;
@@ -20290,9 +20307,15 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 767px) {
+  .lead-form-section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .actions-wrapper,
   .input-wrapper {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    margin-top: 15px;
   }
   .lead-form-wrapper h2 {
     font-size: 22px;
@@ -20300,11 +20323,14 @@ input[type="checkbox"] {
   .lead-form-wrapper p {
     font-size: 14px;
   }
+  .input-wrapper input {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
   .lead-form-wrapper {
-    padding: 30px;
+    padding: 30px 15px;
   }
 }
 

@@ -110,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <a href="kontakt.html">Kontakt</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="https://www.facebook.com/c12346778" style="padding: 0;"><img style="width: 24px;" src="./img/facebook.svg" alt="fb" /></a>
+                                                <a href="https://www.facebook.com/comfortresidencepl" style="padding: 0;"><img style="width: 24px;" src="./img/facebook.svg" alt="fb" /></a>
                                             </li>
                                             <li class="menu-item">
                                                 <a href="https://www.youtube.com/channel/UCHTdslDP40Kllkk8y69lM_A" style="padding: 0; margin-left: 10px;"><img style="width: 24px;" src="./img/youtube.svg" alt="yt" /></a>
@@ -160,7 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <a href="kontakt.html">Kontakt</a>
                             </li>
                             <li class="menu-item" style="display: flex;">
-                                <a target="_blank" href="https://www.facebook.com/c12346778" style="padding: 7px 0; margin-left: 15px;"><img style="width: 22px;" src="./img/facebook.svg" alt="fb" /></a>
+                                <a target="_blank" href="https://www.facebook.com/comfortresidencepl" style="padding: 7px 0; margin-left: 15px;"><img style="width: 22px;" src="./img/facebook.svg" alt="fb" /></a>
                                 <a target="_blank" href="https://www.youtube.com/channel/UCHTdslDP40Kllkk8y69lM_A" style="padding: 7px 0; margin-left: 10px;"><img style="width: 22px;" src="./img/youtube.svg" alt="yt" /></a>
                             </li>
                             </li>
@@ -178,65 +178,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img id="custom-topmost-banner-big" src="/images/nowa-inwestycja.png" height="720" width="1920" alt="Migowskie_dzień_otwart" class="slider-930 slide-936" draggable="false">
                 <img id="custom-topmost-banner-small" src="/images/nowainwestycja_png kopia.png" height="720" width="1920" alt="Migowskie_dzień_otwart" class="slider-930 slide-936" draggable="false">
             </div>
-            <div id="formularz" class="custom-row">
-                <h2 style="text-align: center">Jesteś zainteresowany 2 etapem?</h2>
-            </div>
-            <section class="section p-b-80">
+            <section id="formularz" class="lead-form-section">
                 <div class="container">
-                    <h4 class="text-center mb-5">Wypełnij formularz w celu umówienia rozmowy i rezerwacji najlepszych lokali jeszcze przed wprowadzeniem oferty.</h4>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form class="form-contact js-contact-form" method="POST" action="php/send.php">
-                                <div class="form-row no-gutters custom-fade-in">
-                                    <div class="col-md-6">
-                                        <input class="au-input" type="text" name="name" placeholder="Imię" required="required">
-                                        <input class="au-input" type="email" name="email" placeholder="Adres email" required="required" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                                        <input class="au-input" type="text" name="phone" placeholder="Telefon" required="required">
-                                        <select class="au-select" style="color: #888;" name="yardage" id="yardage-select" required="required">
-                                            <option value="nieokreślony">Wybierz metraż</option>
-                                            <option value="50m2">50m2</option>
-                                            <option value="75m2">75m2</option>
-                                            <option value="105m2">105m2</option>
-                                        </select>
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <form id="lead-form" method="post" class="lead-form">
+                                <div class="lead-form-wrapper">
+                                    <div class="headline-form-wrapper">
+                                        <h2>Zarezerwuj swój dom już teraz i zainwestuj w komfort!</h2>
+                                        <p>Nasz konsultant odpowie na wszelkie pytania. Wpisz swoje dane:</p>
                                     </div>
-                                    <div class="col-md-6 p-r-0">
-                                        <textarea class="au-textarea" name="message" placeholder="Wiadomość*" required="required"></textarea>
-                                        <!-- <div class="text-right">
-                                                <button class="au-btn au-btn--solid" type="submit">Wyślij wiadomość</button>
-                                            </div> -->
+                                    <div class="input-wrapper">
+                                        <input type="text" name="lead_name" placeholder="Imię i nazwisko*" required>
+                                        <input type="text" name="lead_email" placeholder="Email*" required>
+                                        <input type="text" name="lead_phone" placeholder="Nr telefonu*" required>
+                                    </div>
+                                    <div class="checkbox-wrapper">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="contact-accept" name="contact-accept" required />
+                                            <div class="checkbox-label-wrapper">
+                                                <label for="contact-accept" class="checkbox-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi zapytania lub przedstawienia oferty. <span class="checkbox-text-hidden">Wyrażenie zgody jest dobrowolne, ale konieczne, abyśmy mogli kontaktować się z Państwem w celu obsługi zapytania i przedstawienia oferty. Jeżeli nie chcą Państwo, abyśmy kontaktowali się w tym celu za pomocą e-maila lub telefonu, zapraszamy do odwiedzenia naszego biura sprzedaży.</span>*  </label><span class="expand-button">rozwiń</span> 
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="marketing-accept" name="marketing-accept" />
+                                            <div class="checkbox-label-wrapper">
+                                            <label for="marketing-accept" class="checkbox-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w celach marketingowych <span class="checkbox-text-hidden">w tym m.in. dla informowania o aktualnej ofercie przez Comfort Residence z siedzibą w Warszawie przy ul. Moniuszki 22.</span>  </label><span class="expand-button">rozwiń</span>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col custom-fade-in">
-                                        <div class="zgoda1-wrapper">
-                                            <input id="zgoda1" name="zgoda1" type="checkbox" value="tak" required="required">
-                                            <label for="zgoda1">Zgodnie z ustawą z dnia 18 lipca 2002 r. świadczeniu
-                                                usług drogą elektroniczną (Dz.U. z 2002 r. Nr 144, poz. 1204 z późn.
-                                                zm.) wyrażam zgodę na otrzymywanie za pomocą poczty elektronicznej
-                                                informacji związanych ze złożonym zapytaniem przez Comfort Residence z
-                                                siedzibą w Warszawie przy ul. Moniuszki 22.
-                                            </label>
-                                        </div>
-                                        <div class="zgoda2-wrapper">
-                                            <input id="zgoda2" name="zgoda2" type="checkbox" value="tak" required="required">
-                                            <label for="zgoda2">Wyrażam zgodę na używanie przez Comfort Residence z
-                                                siedzibą w Warszawie przy ul. Moniuszki 22, telekomunikacyjnych urządzeń
-                                                końcowych (telefonu komórkowego), których jestem użytkownikiem dla celów
-                                                przekazania informacji związanych ze złożonym zapytaniem zgodnie z art. 172
-                                                ustawy z dnia 16 lipca 2004 r. Prawo telekomunikacyjne (Dz.U. 2004 nr 171 poz.
-                                                1800).
-                                            </label>
-                                        </div>
-                                        <p><i>Zaznacz zgody poprzez kliknięcie na tekst lub na checkbox.</i></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <button class="au-btn au-btn--solid" type="submit">Wyślij wiadomość</button>
-                                    </div>
+                                <div class="actions-wrapper">
+                                    <div class="form-message"></div>
+                                    <button type="submit" class="form-button">Wyślij</button>
                                 </div>
                             </form>
-                        </div>
                     </div>
                 </div>
             </section>

@@ -8343,8 +8343,7 @@ button:focus {
   margin-bottom: 20px;
 }
 
-#kontakt h2,
-#formularz h2 {
+#kontakt h2 {
   color: #000;
   font-weight: 600;
   text-transform: uppercase;
@@ -8352,8 +8351,7 @@ button:focus {
   margin-bottom: 40px;
 }
 
-#kontakt h2:after,
-#formularz h2:after {
+#kontakt h2:after {
   content: "";
   background: #551caa;
   height: 8px;
@@ -19712,6 +19710,12 @@ input[type="checkbox"] {
   text-align: right;
 }
 
+@media screen and (max-width: 991px) {
+  .cookies-container {
+    bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .cookies-container {
     background: linear-gradient(
@@ -20035,12 +20039,6 @@ input[type="checkbox"] {
   border-right: 1px solid #fff;
 }
 
-@media (min-width: 992px) {
-  .side-quick-menu-item {
-    width: auto;
-  }
-}
-
 .side-quick-menu-item a {
   position: relative;
   display: flex;
@@ -20053,13 +20051,6 @@ input[type="checkbox"] {
   color: #ffffff;
   font-size: 20px;
   /* border-right: 2px solid #888888; */
-}
-
-@media (min-width: 992px) {
-  .side-quick-menu-item {
-    border-right: 0;
-    border-bottom: 1px solid #fff;
-  }
 }
 
 .side-quick-menu-item a::before {
@@ -20080,6 +20071,11 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 992px) {
+  .side-quick-menu-item {
+    width: auto;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+  }
   .side-quick-menu-item a {
     width: 60px;
   }
@@ -20123,6 +20119,7 @@ input[type="checkbox"] {
 @media (min-width: 992px) {
   .side-quick-menu-item:first-of-type {
     border-top-left-radius: 20px;
+    border-top: 0;
   }
   .side-quick-menu-item:last-of-type {
     border-bottom: 0;
@@ -20213,6 +20210,14 @@ input[type="checkbox"] {
   background-color: transparent;
 }
 
+.input-wrapper input:-webkit-autofill,
+.input-wrapper input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+.input-wrapper input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
 .input-wrapper input::placeholder {
   color: rgba(255, 255, 255, .7);
 }
@@ -20298,6 +20303,27 @@ input[type="checkbox"] {
   grid-gap: 20px;
 }
 
+.actions-wrapper .alert {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: normal;
+}
+
+.alert-success,
+.alert-danger {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.alert-success {
+  color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #f5c6cb;
+}
+
 .actions-wrapper .form-button {
   color: #551caa;
   font-weight: bold;
@@ -20341,4 +20367,9 @@ input[type="checkbox"] {
   .actions-wrapper .form-button:hover {
     background-color: rgb(228,178,236);
   }
+}
+
+.fb_dialog iframe {
+  bottom: 75px !important;
+  right: 0;
 }

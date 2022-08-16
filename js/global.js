@@ -928,6 +928,43 @@
             });
         });
     }
+
+    const leadForm = $('#lead-form');
+    if( leadForm.length ) {
+        leadForm.on('submit', function(e) {
+            e.preventDefault();
+            console.log('test');
+            $.ajax({
+                dataType: 'JSON',
+                url: 'php/lead.php',
+                type: 'POST',
+                data: $('#lead-form').serialize(),
+                beforeSend: function(xhr){
+                  $('.form-button').html('Wysyłanie...');
+                },
+                success: function(response){
+                  if(response){
+                    console.log(response);
+                    if(response['isSuccess']){
+                     $('.form-message').html('<div class="alert alert-success">'+ response['msg']  +'</div>');
+                      $('input, textarea').val(function() {
+                         return this.defaultValue;
+                      });
+                    }
+                    else{
+                      $('.form-message').html('<div class="alert alert-danger">'+ response['msg'] +'</div>');
+                    }
+                  }
+                },
+                error: function(){
+                  $('.form-message').html('<div class="alert alert-danger">Wystąpił problem z wysyłaniem wiadomości. Spróbuj jeszcze raz.</div>');
+                },
+                complete: function(){
+                  $('.form-button').html('Wyślij');
+                }
+            });
+        });
+    }
 })(jQuery);
 
 

@@ -205,95 +205,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </section>
             <!-- END PAGE HEADING-->
 
-            <!-- CONTACT-->
-            <section class="section p-b-80">
+            <section style="margin-bottom: 50px;">
                 <div class="container">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="contact-info">
-                                <div class="contact-info__item">
-                                    <h5 class="title--sm2">Telefon:</h5>
-                                    <p class="value">
-                                        <a href="tel:+48531696681" class="phone-link" data-js-animation="no-animate"
-                                        style="color: #222;">+48 531 696 681</a>
-                                    </p>
-                                </div>
-                                <div class="contact-info__item">
-                                    <h5 class="title--sm2">email:</h5>
-                                    <p class="value">
-                                        <a href="mailto:kontakt@comfortresidence.pl" class="mail-link" data-js-animation="no-animate"
-                                            style="color: #222;">kontakt@comfortresidence.pl
-                                        </a>
-                                    </p>
-                                </div>
-                                <div class="contact-info__item" style="margin-top: 50px">
-                                    <h5 class="title--sm2">Biuro sprzedaży</h5>
-                                    <p class="value">
-                                        ul. Kasztanowa, </br>80-297 Banino</br>
-                                        <a href="https://goo.gl/maps/zghiECBJbSx5zvLX7"
-                                        style="color: #222;margin-top:5px;" target="_blank">Znajdź na mapie ></a>
-                                    </p>
-                                </div>
+                    <div class="row contact-info">
+                        <div class="col-md-4">
+                            <div class="contact-info__item">
+                                <h5 class="title--sm2">Telefon:</h5>
+                                <p class="value">
+                                    <a href="tel:+48531696681" class="phone-link" data-js-animation="no-animate"
+                                    style="color: #222;">+48 531 696 681</a>
+                                </p>
                             </div>
                         </div>
-                        <div class="col-lg-8">
-                            <form class="form-contact js-contact-form" method="POST" action="php/send2.php">
-                                <div class="form-row no-gutters">
-                                    <div class="col-md-6">
-                                        <input class="au-input" type="text" name="name" placeholder="Imię"
-                                            required="required">
-                                        <input class="au-input" type="email" name="email" placeholder="Adres email"
-                                            required="required" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                                        <input class="au-input" type="text" name="phone" placeholder="Telefon"
-                                            required="required">
-                                    </div>
-                                    <div class="col-md-6 p-r-0">
-                                        <textarea class="au-textarea" name="message" placeholder="Wiadomość*"
-                                            required="required"></textarea>
-                                        <!-- <div class="text-right">
-                                            <button class="au-btn au-btn--solid" type="submit">Wyślij wiadomość</button>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="zgoda1-wrapper">
-                                            <input id="zgoda1" name="zgoda1" type="checkbox" value="tak"
-                                                required="required">
-                                            <label for="zgoda1">Zgodnie z ustawą z dnia 18 lipca 2002 r. świadczeniu
-                                                usług drogą elektroniczną (Dz.U. z 2002 r. Nr 144, poz. 1204 z późn.
-                                                zm.) wyrażam zgodę na otrzymywanie za pomocą poczty elektronicznej
-                                                informacji związanych ze złożonym zapytaniem przez Comfort Residence z
-                                                siedzibą w Gdańsku przy al. Grunwaldzka 615.
-                                            </label>
-                                        </div>
-                                        <div class="zgoda2-wrapper">
-                                            <input id="zgoda2" name="zgoda2" type="checkbox" value="tak"
-                                                required="required">
-                                            <label for="zgoda2">Wyrażam zgodę na używanie przez Comfort Residence z
-                                                siedzibą
-                                                w Gdańsku przy al. Grunwaldzka 615, telekomunikacyjnych urządzeń
-                                                końcowych
-                                                (telefonu komórkowego), których jestem użytkownikiem dla celów
-                                                przekazania
-                                                informacji związanych ze złożonym zapytaniem zgodnie z art. 172 ustawy z
-                                                dnia 16 lipca 2004 r. Prawo telekomunikacyjne (Dz.U. 2004 nr 171 poz.
-                                                1800).
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <button class="au-btn au-btn--solid" type="submit">Wyślij wiadomość</button>
-                                    </div>
-                                </div>
-                            </form>
+                        <div class="col-md-4">
+                            <div class="contact-info__item">
+                                <h5 class="title--sm2">email:</h5>
+                                <p class="value">
+                                    <a href="mailto:kontakt@comfortresidence.pl" class="mail-link" data-js-animation="no-animate"
+                                        style="color: #222;">kontakt@comfortresidence.pl
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-info__item">
+                                <h5 class="title--sm2">Biuro sprzedaży</h5>
+                                <p class="value">
+                                    ul. Kasztanowa, </br>80-297 Banino</br>
+                                    <a href="https://goo.gl/maps/zghiECBJbSx5zvLX7"
+                                    style="color: #222;margin-top:5px;" target="_blank">Znajdź na mapie ></a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- END CONTACT-->
+
+            <section id="formularz" class="lead-form-section" style="margin-bottom: 50px;">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <form id="lead-form" method="post" class="lead-form">
+                                <div class="lead-form-wrapper">
+                                    <div class="headline-form-wrapper">
+                                        <h2>Masz pytania? Napisz do nas!</h2>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="text" name="lead_name" placeholder="Imię i nazwisko*" required>
+                                        <input type="email" name="lead_email" placeholder="Email*" required>
+                                        <input type="text" name="lead_phone" placeholder="Nr telefonu*" required>
+                                        <textarea name="lead_message" placeholder="Wiadomość*"
+                                        required="required"></textarea>
+                                    </div>
+                                    <div class="checkbox-wrapper">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="contact-accept" name="contact-accept" required />
+                                            <div class="checkbox-label-wrapper">
+                                                <label for="contact-accept" class="checkbox-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi zapytania lub przedstawienia oferty. <span class="checkbox-text-hidden">Wyrażenie zgody jest dobrowolne, ale konieczne, abyśmy mogli kontaktować się z Państwem w celu obsługi zapytania i przedstawienia oferty. Jeżeli nie chcą Państwo, abyśmy kontaktowali się w tym celu za pomocą e-maila lub telefonu, zapraszamy do odwiedzenia naszego biura sprzedaży.</span>*  </label><span class="expand-button">rozwiń</span> 
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="marketing-accept" name="marketing-accept" />
+                                            <div class="checkbox-label-wrapper">
+                                            <label for="marketing-accept" class="checkbox-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w celach marketingowych <span class="checkbox-text-hidden">w tym m.in. dla informowania o aktualnej ofercie przez Comfort Residence z siedzibą w Warszawie przy ul. Moniuszki 22.</span>  </label><span class="expand-button">rozwiń</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions-wrapper">
+                                    <div class="form-message"></div>
+                                    <input type="hidden" name="form_page" value="kontakt.html">
+                                    <input type="hidden" name="message_title" value="Wiadomość z formularza kontaktowego">
+                                    <button type="submit" class="form-button">Wyślij</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- END MAIN-->
 

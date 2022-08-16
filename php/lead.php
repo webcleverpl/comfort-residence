@@ -10,9 +10,18 @@
     $isSuccess = '';
     $msg = '';
 
+    $subject = trim($_POST['message_title']);
     $name = trim($_POST['lead_name']);
     $email = trim($_POST['lead_email']);
     $phone = $_POST['lead_phone'];
+    $message = $_POST['lead_message'];
+
+    $marketing = $_POST['marketing-accept'];
+    $marketing_val = $marketing == true ? 'TAK' : '';
+    
+    $form_page = $_POST['form_page'];
+
+    $output = '';
 
     if($name && $email && $phone){
   		if(!filter_var($email, FILTER_VALIDATE_EMAIL))
@@ -38,8 +47,24 @@
         //   $mail->addBcc($email);
           $mail->isHTML(true);                                  // Set email format to HTML
 
-          $mail->Subject = $name . ' przysłał Tobie wiadomość';
+          $mail->Subject = $subject;
           $mail->Body    = 'Imię i nazwisko: ' . $name . ' <br />Email: ' . $email . ' <br />Telefon: ' . $phone;
+
+          $output         = 'Imię i nazwisko: ' . $name . ' <br />';
+          $output        .= 'Email: ' . $email . ' <br />';
+          $output        .= 'Telefon: ' . $phone;
+
+          if( isset( $message ) && $message ) {
+            $output        .= ' <br /><br />Wiadomość: ' . $message;
+          }
+
+          if( isset( $marketing ) && $marketing ) {
+            $output        .= ' <br /><br />Zgoda marketingowa: ' . $marketing_val;
+          }
+
+          $output        .= ' <br /><br />Wiadmość wysłana z formularza na stronie: ' . $form_page;
+
+          $mail->Body    = $output;
 
           if(!$mail->send()) {
               echo 'Twoja wiadomość nie mogła zostać wysłana.';

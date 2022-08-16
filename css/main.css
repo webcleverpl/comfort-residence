@@ -423,6 +423,7 @@ button {
 .contact-info__item {
   color: #222;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact-info__item .value--dark {
@@ -20210,20 +20211,35 @@ input[type="checkbox"] {
   background-color: transparent;
 }
 
+.input-wrapper textarea {
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 2rem;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 .input-wrapper input:-webkit-autofill,
 .input-wrapper input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
 }
-.input-wrapper input[data-autocompleted] {
+.input-wrapper input[data-autocompleted],
+.input-wrapper textarea[data-autocompleted] {
     background-color: transparent !important;
 }
 
+.input-wrapper textarea::placeholder,
 .input-wrapper input::placeholder {
   color: rgba(255, 255, 255, .7);
 }
+.input-wrapper textarea:-ms-input-placeholder,
 .input-wrapper input:-ms-input-placeholder {
   color: rgba(255, 255, 255, .7);
 }
+.input-wrapper textarea::-ms-input-placeholder,
 .input-wrapper input::-ms-input-placeholder {
   color: rgba(255, 255, 255, .7);
 }
@@ -20367,9 +20383,4 @@ input[type="checkbox"] {
   .actions-wrapper .form-button:hover {
     background-color: rgb(228,178,236);
   }
-}
-
-.fb_dialog iframe {
-  bottom: 75px !important;
-  right: 0;
 }

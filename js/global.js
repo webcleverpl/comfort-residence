@@ -960,6 +960,7 @@
                   $('.form-message').html('<div class="alert alert-danger">Wystąpił problem z wysyłaniem wiadomości. Spróbuj jeszcze raz.</div>');
                 },
                 complete: function(){
+                    $('#lead-form')[0].reset();
                   $('.form-button').html('Wyślij');
                 }
             });

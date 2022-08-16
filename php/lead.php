@@ -42,7 +42,7 @@
           $mail->Port = 587;                                    // TCP port to connect to
 
           $mail->setFrom('noreply@comfortresidence.pl', 'Comfort Residence');
-          $mail->addAddress('rw@rdbgroup.pl');     // Add a recipient
+          $mail->addAddress('kontakt@comfortresidence.pl');     // Add a recipient
           $mail->addReplyTo($email, $name);
         //   $mail->addBcc($email);
           $mail->isHTML(true);                                  // Set email format to HTML

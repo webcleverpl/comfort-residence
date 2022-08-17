@@ -8368,6 +8368,7 @@ button:focus {
   margin: 0 auto;
 }
 
+#okolica h2,
 #apartamenty h2,
 #plan-osiedla h2 {
   color: #000;
@@ -8377,6 +8378,7 @@ button:focus {
   margin-bottom: 40px;
 }
 
+#okolica h2::after,
 #apartamenty h2:after,
 #plan-osiedla h2:after {
   content: "";
@@ -19645,6 +19647,12 @@ h6 {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  #gallery > div {
+    padding: 0;
+  }
+}
+
 #partnerzy-5,
 #partnerzy-6 {
   width: 200px;
@@ -20392,5 +20400,38 @@ input[type="checkbox"] {
   }
   .actions-wrapper .form-button:hover {
     background-color: rgb(228,178,236);
+  }
+}
+
+.cheaper-house h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #551caa;
+}
+
+.cheaper-house h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #000;
+}
+
+.cheaper-house .check-price-button {
+  padding: 10px 25px;
+  background-color: #551caa;
+  color: #ffffff;
+  line-height: 1.5;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
+}
+@media (max-width: 575px) {
+  .cheaper-house .check-price-button {
+    font-size: 14px;
+  }
+}
+@media (hover:hover) {
+  .cheaper-house .check-price-button:hover {
+    background-color: #efd2f4;
+    color: #551caa;
   }
 }

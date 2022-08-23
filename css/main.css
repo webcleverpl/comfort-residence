@@ -20435,3 +20435,32 @@ input[type="checkbox"] {
     color: #551caa;
   }
 }
+.map-locations ul {
+  margin-left: 20px;
+}
+.map-locations li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.map-locations li img {
+  margin-right: 5px;
+  max-width: 32px;
+}
+@media (max-width: 991px) {
+  .map-locations {
+    margin-top: 40px;
+  }
+  .map-locations ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .map-locations li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .map-locations ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -8201,7 +8201,8 @@ button:focus {
   line-height: 1.618em;
 }
 
-#oinwestycji h2 {
+#oinwestycji h2,
+#infographics h2 {
   color: #000;
   font-weight: 600;
   text-transform: uppercase;
@@ -8209,7 +8210,8 @@ button:focus {
   margin-bottom: 40px;
 }
 
-#oinwestycji h2:after {
+#oinwestycji h2:after,
+#infographics h2:after {
   content: "";
   background: #551caa;
   height: 8px;
